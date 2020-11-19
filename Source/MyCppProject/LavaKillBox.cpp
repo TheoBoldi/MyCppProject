@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-/*
+
 #define print(text) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green, text)
 #define printf(text, fstring) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, Fcolor::Green, FString::Printf(Text(text), fstring))
 
@@ -24,8 +24,8 @@ void ALavaKillBox::OnOverlapBegin(class AActor* OverlappedActor, class AActor* O
 {
 	if (OtherActor && (OtherActor != this))
 	{
-		print("Overlap Begin");
-		printf("Overlapped Actor = %S", OverlappedActor->GetName());
+		/*print("Overlap Begin");
+		printf("Overlapped Actor = %S", OverlappedActor->GetName());*/
 	}
 }
 
@@ -33,7 +33,7 @@ void ALavaKillBox::OnOverlapEnd(class AActor* OverlappedActor, class AActor* Oth
 {
 	if (OtherActor && (OtherActor != this))
 	{
-		print("Overlap Ended");
-		printf("Overlapped Actor = %S", *OtherActor->GetName());
+		/*print("Overlap Ended");
+		printf("Overlapped Actor = %S", *OtherActor->GetName());*/
 	}
-}*/
+}
